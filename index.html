@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Typescript </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <h1> Budget : <span> </span> Euros </h1>
+
+    <div id="depenses">
+
+    
+
+    </div>
+
+    <div id="ajouter"> + </div>
+
+    <form>
+
+        <label>Raison :</label><input type="text" id="raison" /> <br>
+        <label>Valeur :</label><input type="text" id="valeur" /> <br>
+        <label>Description :</label><textarea id="description"></textarea> <br>
+        <label>Categorie :</label>
+        <select id="categorie">
+            <!-- dynamique -->
+        </select>
+        <input type="submit" value="valider">
+
+    </form>
+    
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script>
+        System.import('main')
+          .catch(function(err){ console.error(err); });
+    </script>
+</body>
+</html>
